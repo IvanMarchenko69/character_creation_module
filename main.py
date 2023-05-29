@@ -6,7 +6,7 @@ char_class: str = ''
 
 def attack(char_name: str, char_class: str) -> str:
     if char_class == 'warrior':
-        t1 = 'нанёс урон противнику равный'
+        t1: str = 'нанёс урон противнику равный'
         return (f'{char_name} {t1} {5 + randint(3, 5)}')
     if char_class == 'mage':
         return (f'{char_name} {t1} {5 + randint(5, 10)}')
@@ -26,7 +26,7 @@ def defence(char_name: str, char_class: str) -> str:
 
 
 def special(char_name: str, char_class: str) -> str:
-    t2 = 'применил специальное умение'
+    t2: str = 'применил специальное умение'
     if char_class == 'warrior':
         return (f'{char_name} {t2} «Выносливость {80 + 25}»')
     if char_class == 'mage':
